@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_ground" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/plan_txt"
+        android:background="#00979a"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/pl_text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" 
+                >
+
+                <TextView
+                    android:id="@+id/text_montag_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="#9dd7d8"
+                    android:gravity="center"
+                    android:text="@string/mon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_mo"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:background="#ffffff" >
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/button_vorl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_layer_long"
+                    android:text="@string/vorlesung_erstellen"
+                    android:textColor="#ffffff" />
+
+"
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_di_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/die"
+                    android:background="#9dd7d8"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/listView_di"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:background="#ffffff" >
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/button_vorl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen"
+                    android:background="@drawable/button_layer_long" 
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_mi_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/mit"
+                    android:background="#9dd7d8"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_mi"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp" >
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen"
+                    android:background="@drawable/button_layer_long" 
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_do_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/don"
+                    android:background="#9dd7d8"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp" >
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" 
+                    android:background="@drawable/button_layer_long" 
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="700dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_fr_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/fre"
+                    android:background="#9dd7d8"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_fr"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:background="#ffffff" >
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" 
+                    android:background="@drawable/button_layer_long" 
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button_erstellen_SP"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_layer_long"
+        android:text="Button"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

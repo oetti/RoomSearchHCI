@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="305dp"
+        android:layout_height="384dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.00" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_montag_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/mon"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/listView_mo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/button_vorl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_di_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/die"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/listView_di"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/button_vorl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_mi_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/mit"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_mi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_do_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/don"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_do"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_fr_se"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/fre"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <ListView
+                    android:id="@+id/ListView_fr"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/Button_vorl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/vorlesung_erstellen" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button_erstellen_SP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>

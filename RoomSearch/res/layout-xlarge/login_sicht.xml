@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/welcome_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:background="#00979a"
+        android:gravity="center"
+        android:text="@string/einleitung_login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="50dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip"
+            android:gravity="center"
+            android:text="@string/info_login"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/Text_login_info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:text="@string/info_login2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/Text_login_info3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:text="@string/info_login3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textSize="30dip" />
+
+        <TextView
+            android:id="@+id/hrz_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="80dip"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/hrz_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dip" />
+
+        <EditText
+            android:id="@+id/matText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="50dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/pw_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="30dip"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/passwort"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dip" />
+
+        <EditText
+            android:id="@+id/pwText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="50dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="80dip"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/ein_button"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="50dip"
+                android:background="@drawable/button_layer"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="50dip" />
+
+            <Button
+                android:id="@+id/gast_button"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button_layer"
+                android:text="@string/gast"
+                android:textColor="#ffffff"
+                android:textSize="50dip" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profil_erstellen"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_layer_long"
+            android:text="@string/profil_erstellen"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

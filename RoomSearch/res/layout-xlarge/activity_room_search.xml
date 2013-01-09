@@ -1,0 +1,38 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-6dp"
+        android:layout_y="200dp"
+        android:gravity="center"
+        android:text="@string/title_activity_room_search"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="739dp"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="777dp"
+        android:gravity="center"
+        android:text="@string/wfr"
+        android:textSize="80dp" 
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/image_lupe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-93dp"
+        android:layout_y="293dp"
+        android:src="@drawable/lupe_seq" />
+
+</AbsoluteLayout>

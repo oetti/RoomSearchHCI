@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_info_haus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="#00979a"
+        android:gravity="center"
+        android:text="@string/nichtvorhanden"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher_haus_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_gast_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/raumnummerinfo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/image_haus"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+                android:layout_weight="0"
+                android:src="@drawable/haus_gauss" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/haus_informationen"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/text_raumnummer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/raumnummer"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button_radio1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/text_zeitraum"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/zeitraum"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/text_vorlesung_gast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/vorlesung_gast"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button_radio2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <Spinner
+            android:id="@+id/spinner_zeit"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinner_vorlesungen"
+            android:layout_width="635dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/text_besondere_raeume_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/besondere"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button_radio3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner_besondere"
+        android:layout_width="290dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/suchen_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dip"
+        android:background="#00979a"
+        android:text="@string/suchen"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+</LinearLayout>

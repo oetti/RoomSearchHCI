@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back_ground">
+
+    <TextView
+        android:id="@+id/text_auswahl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/auswahl"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:background="#00979a" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sel_dv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/sel_dv"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/Button_ms"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:shadowColor="#ffffff"
+            android:text="@string/button_ms"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/text_aktion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/sel_raum_nummer"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/sel_edit_raumnummer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/sel_button_raum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/sel_raum_anzeigen"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/sel_weg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#9dd7d8"
+            android:gravity="center"
+            android:text="@string/sel_standort"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp" >
+
+            <AbsoluteLayout
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.77" >
+
+                <ImageView
+                    android:id="@+id/sel_image_campus"
+                    android:layout_width="646dp"
+                    android:layout_height="220dp"
+                    android:layout_x="-200dp"
+                    android:src="@drawable/campus_lageplan" />
+
+                <ImageView
+                    android:id="@+id/sel_image_person"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_x="166dp"
+                    android:layout_y="94dp"
+                    android:src="@drawable/man_person_mens_room" />
+
+                <ImageView
+                    android:id="@+id/sel_image_flag"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_x="28dp"
+                    android:layout_y="139dp"
+                    android:src="@drawable/flag_ziel" />
+            </AbsoluteLayout>
+
+            <TextView
+                android:id="@+id/sel_position"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.77"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/test"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

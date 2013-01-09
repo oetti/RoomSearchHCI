@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_wHaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:text="@string/w_haus"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="50dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="751dp"
+                    android:src="@drawable/campus_lageplan" />
+
+                <Button
+                    android:id="@+id/beuth_button"
+                    android:layout_width="203dp"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_x="168dp"
+                    android:layout_y="153dp"
+                    android:background="@drawable/v_button"
+                    android:rotation="-40" />
+
+                <Button
+                    android:id="@+id/bauwesen_button"
+                    android:layout_width="261dp"
+                    android:layout_height="219dp"
+                    android:layout_x="488dp"
+                    android:layout_y="120dp"
+                    android:background="@drawable/v_button"
+                    android:rotation="-40" />
+
+                <Button
+                    android:id="@+id/gauss_button"
+                    android:layout_width="190dp"
+                    android:layout_height="201dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_x="89dp"
+                    android:layout_y="429dp"
+                    android:background="@drawable/v_button"
+                    android:rotation="-40" />
+
+                <Button
+                    android:id="@+id/grashof_button"
+                    android:layout_width="208dp"
+                    android:layout_height="225dp"
+                    android:layout_x="268dp"
+                    android:layout_y="290dp"
+                    android:background="@drawable/v_button"
+                    android:rotation="-40" />
+
+                <CheckBox
+                    android:id="@+id/check_gast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="488dp"
+                    android:layout_y="685dp"
+                    android:text="@string/checkbox_gast" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_x="165dp"
+                    android:layout_y="512dp"
+                    android:src="@drawable/man_person_mens_room" />
+
+            </AbsoluteLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+                android:layout_gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="470dp"
+                            android:layout_height="102dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#9dd7d8"
+                            android:gravity="center"
+                            android:text="@string/deine_position"
+                            android:textSize="50dp" />
+
+                        <TextView
+                            android:id="@+id/text_position"
+                            android:layout_width="470dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="@string/test"
+                            android:textSize="50dp" />
+
+                    </LinearLayout>
+
+                    <AbsoluteLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="300dp"
+                            android:layout_height="327dp"
+                            android:layout_x="0dp"
+                            android:layout_y="45dp"
+                            android:src="@drawable/qr_code" />
+
+                        <TextView
+                            android:id="@+id/text_qr"
+                            android:layout_width="300dp"
+                            android:layout_height="60dp"
+                            android:layout_x="0dp"
+                            android:layout_y="1dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="@string/qr_code"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="30dp" />
+
+                        <Button
+                            android:id="@+id/button_qr"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent" />
+
+                    </AbsoluteLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
